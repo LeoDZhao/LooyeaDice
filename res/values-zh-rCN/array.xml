@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    
+    <string-array name="dice_array">
+        <item>色子 A</item>
+        <item>色子 B</item>
+        <item>色子 C</item>
+        <item>色子 D</item>
+        <item>色子 E</item>
+        <item>色子 F</item>
+    </string-array>
+</resources>

@@ -1,0 +1,368 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/darkgray">
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/layout_number"
+       android:orientation="horizontal">
+        
+	   <TextView 
+	       android:layout_width="0dp"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       android:text="@string/number_of_dice"
+	       android:textSize="24sp"/>"
+	   
+	   <Spinner
+	       style="?android:attr/spinnerItemStyle"
+	       android:id="@+id/spinner_number"
+	       android:layout_width="96dp"
+	       android:layout_height="wrap_content"
+	       android:entries="@array/number_array"
+	       android:gravity="center"/>"
+	   
+   </LinearLayout>
+   
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/layout_about"
+       android:orientation="vertical">    
+		 	<TextView
+		     android:id="@+id/text_as_wish" 
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/as_wish"
+		     android:textSize="48sp"
+		     android:paddingTop="50dp"
+		     android:paddingBottom="50dp"
+		     android:gravity="center"/>
+		 
+ 		 	 <TextView
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/developer"
+		     android:textSize="18sp"/>
+		 
+ 		 	 <TextView
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/do_not"
+		     android:textSize="18sp"/>	 
+
+		 	 
+		 	 <TextView
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/bugs"
+		     android:textSize="18sp"/>
+		 	 
+		 	 <TextView
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/email"
+		     android:textSize="18sp"/>
+		 	 
+
+   </LinearLayout>
+   
+   <LinearLayout
+       android:id="@+id/layout_probability"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:paddingTop="15dp"
+       android:visibility="invisible">
+	   
+       <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/layout_cheat"
+       android:orientation="horizontal">
+        
+	   <TextView
+	       android:layout_width="0dp"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       android:text="@string/cheat_mode"
+	       android:textSize="24sp"/>
+	   <Switch
+	       android:id="@+id/switch_cheat"
+	       android:layout_width="96dp"
+	       android:layout_height="wrap_content"
+	       android:textOn="@string/text_on"
+	       android:textOff="@string/text_off"
+	   ></Switch> 
+	   
+   </LinearLayout>
+	   
+       	   <TextView
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/cheat_mode2"
+	       android:textSize="12sp"
+	       android:textStyle="italic"/>
+
+       <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/layout_choose_dice"
+	       android:orientation="horizontal"
+	       android:paddingTop="10dp">
+        
+		   <TextView
+		       android:layout_width="0dp"
+		       android:layout_height="wrap_content"
+		       android:layout_weight="1"
+		       android:text="@string/choose_dice"
+		       android:textSize="16sp"/>
+		   
+		   <Spinner
+		       android:id="@+id/spinner_dice"
+		       android:layout_width="96dp"
+		       android:layout_height="wrap_content"
+		       android:entries="@array/dice_array"
+		       android:gravity="center" />
+	   
+  		</LinearLayout>
+  		
+	   <TextView
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:text="@string/cal_probability"
+	       android:textSize="12sp"
+	       android:textStyle="italic"
+	       android:paddingBottom="10dp"/>"
+
+	 
+	   
+	   <ScrollView
+	       android:layout_width="match_parent"
+	       android:layout_height="0dp"
+	       android:layout_weight="1">
+	       
+   	   <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:orientation="vertical">
+	       
+		   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+		       <ImageView 
+		           android:src="@drawable/dice1"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+	           <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar0"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight0"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>
+		   
+		   	   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+	           <ImageView 
+		           android:src="@drawable/dice2"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+       		  <LinearLayout
+			       android:layout_width="match_parent"
+			       android:layout_height="wrap_content"
+			       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar1"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight1"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>
+		   
+	   	   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+	           <ImageView 
+		           android:src="@drawable/dice3"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+	           <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar2"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight2"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>
+		   
+	   	   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+	           <ImageView 
+		           android:src="@drawable/dice4"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+	           <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar3"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight3"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>
+		   
+	   	   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+	           <ImageView 
+		           android:src="@drawable/dice5"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+	           <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar4"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight4"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>
+		   
+	   	   <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="vertical">
+		       
+	           <ImageView 
+		           android:src="@drawable/dice6"
+		           android:layout_width="24dp"
+		           android:layout_height="24dp"
+		           android:paddingLeft="5dp"/>
+	           
+	           <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal">
+	           
+		       	   <SeekBar
+			       android:id="@+id/seekBar5"
+			       android:layout_width="0dp"
+			       android:layout_height="wrap_content" 
+			       android:layout_weight="1"
+			       android:progress="0"
+			       android:max="10"/>
+		       	   
+		       	   <TextView
+		       	       android:id="@+id/text_weight5"
+			           android:layout_width="24dp"
+			           android:layout_height="wrap_content"
+			           android:text="@string/default_weight"/>		       	   
+	       	   
+	       	   </LinearLayout>
+		       
+		   </LinearLayout>	   	   
+	   
+   	   </LinearLayout>
+	   
+   	   </ScrollView>
+
+   
+   </LinearLayout>
+
+
+</LinearLayout>

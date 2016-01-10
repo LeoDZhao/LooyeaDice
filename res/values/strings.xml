@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LooyeaDice</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="number_of_dice">Number of Dice: </string>
+    
+    <string name="as_wish">Looyea! Looyea!</string>
+    <string name="developer">Developed by dzhao</string>
+    <string name="do_not">Do NOT use it for illegal activities!</string>
+    <string name="bugs">Welcome to send bugs or advices to: </string>
+    <string name="email">ruyidice@163.com</string>
+    
+    
+    <string name="cheat_mode">Cheating mode:</string>
+    <string name="cheat_mode2">(Quick switch by double tap on game view)</string>
+    <string name="text_on">ON</string>
+    <string name="text_off">OFF</string>
+    <string name="cal_probability">(probability i = weight i / total weight)</string>
+    <string name="choose_dice">Change weight of number for:  </string>
+    
+    <string name="num1">Number 1: </string>
+    <string name="num2">Number 2: </string>
+    <string name="num3">Number 3: </string>
+    <string name="num4">Number 4: </string>
+    <string name="num5">Number 5: </string>
+    <string name="num6">Number 6: </string>
+    
+    <string name="default_weight">0</string>
+    
+    
+    <string name="seekbar0">seekbar0</string>
+    <string name="seekbar1">seekbar1</string>
+    <string name="seekbar2">seekbar2</string>
+    <string name="seekbar3">seekbar3</string>
+    <string name="seekbar4">seekbar4</string>
+    <string name="seekbar5">seekbar5</string>
+    
+    <string name="text_cheat_on">ON</string>
+    <string name="text_cheat_off">OFF</string>
+    
+
+</resources>
